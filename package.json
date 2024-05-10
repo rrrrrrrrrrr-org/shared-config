@@ -5,7 +5,10 @@
     "packages/*"
   ],
   "scripts": {
-    "publish-test": "npm config set access public && lerna publish"
+    "publish-test": "npm config set access public && lerna publish",
+    "react": "pnpm --filter react",
+    "js": "pnpm --filter vanilla-js",
+    "ts": "pnpm --filter vanilla-ts"
   },
   "dependencies": {},
   "devDependencies": {

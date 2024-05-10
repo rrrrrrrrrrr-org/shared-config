@@ -1,5 +1,5 @@
 {
-  "name": "prettier-config",
+  "name": "@rrrrrrrrrrr/prettier-config",
   "version": "0.0.1-alpha.0",
   "description": "shared prettier",
   "author": "rocky <rrrrrrrrrrrocky@gmail.com>",
@@ -9,15 +9,12 @@
   "files": [
     "index.js"
   ],
-  "devDependencies": {
-    "prettier": "^3.2.5"
+  "peerDependencies": {
+    "prettier": ">= 3"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rrrrrrrrrrr-org/shared-config.git"
-  },
-  "scripts": {
-    "test": "node ./__tests__/prettier.test.js"
   },
   "bugs": {
     "url": "https://github.com/rrrrrrrrrrr-org/shared-config/issues"
