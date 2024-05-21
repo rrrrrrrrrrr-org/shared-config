@@ -6,15 +6,16 @@
     "packages/*"
   ],
   "scripts": {
+    "lerna": "lerna",
     "publish-test": "npm config set access public && lerna publish",
     "react": "pnpm --filter react",
     "js": "pnpm --filter vanilla-js",
     "ts": "pnpm --filter vanilla-ts"
   },
   "devDependencies": {
-    "configstore": "^6.0.0",
     "execa": "^9.1.0",
     "lerna": "^8.1.2",
+    "release": "^6.3.1",
     "resolve-from": "^5.0.0"
   }
 }
