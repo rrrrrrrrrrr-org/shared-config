@@ -10,8 +10,9 @@
     "js": "pnpm --filter vanilla-js",
     "ts": "pnpm --filter vanilla-ts"
   },
-  "dependencies": {},
   "devDependencies": {
-    "lerna": "^8.1.2"
+    "execa": "^9.1.0",
+    "lerna": "^8.1.2",
+    "resolve-from": "^5.0.0"
   }
 }
