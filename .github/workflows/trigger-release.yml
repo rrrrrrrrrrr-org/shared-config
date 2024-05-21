@@ -72,5 +72,5 @@ jobs:
 
       - run: node ./scripts/start-release.js --release-type ${{ github.event.inputs.releaseType || 'canary' }} --semver-type ${{ github.event.inputs.semverType }}
         env:
-          # NPM_TOKEN: ${{ secrets.RRRRRRRRRRR_ORG_NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.RRRRRRRRRRR_ORG_NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.RRRRRRRRRRR_ORG_GITHUB_TOKEN }}
