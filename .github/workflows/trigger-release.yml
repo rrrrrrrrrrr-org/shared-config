@@ -19,6 +19,9 @@ on:
 
 name: Trigger Release
 
+env:
+  NODE_LTS_VERSION: 20
+
 jobs:
   start:
     if: github.repository_owner == 'rrrrrrrrrrr-org'
@@ -28,9 +31,8 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v4
         with:
-          node-version-file: ".nvmrc"
-          cache: pnpm
-          registry-url: https://registry.npmjs.org
+          node-version: ${{ env.NODE_LTS_VERSION }}
+          check-latest: true
 
       - name: Clone repository
         run: git clone https://github.com/rrrrrrrrrrr-org/shared-config.git --depth=25 --single-branch --branch main .
