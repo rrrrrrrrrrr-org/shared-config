@@ -30,13 +30,11 @@ async function main() {
   const npmToken = process.env.NPM_TOKEN;
 
   if (!githubToken) {
-    console.log(`Missing GITHUB_TOKEN`);
-    return;
+    throw new Error("Missing GITHUB_TOKEN");
   }
 
   if (!npmToken) {
-    console.log(`Missing NPM_TOKEN`);
-    return;
+    throw new Error("Missing NPM_TOKEN");
   }
 
   const configStorePath = resolveFrom(
