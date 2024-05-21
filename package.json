@@ -12,6 +12,7 @@
     "ts": "pnpm --filter vanilla-ts"
   },
   "devDependencies": {
+    "configstore": "^6.0.0",
     "execa": "^9.1.0",
     "lerna": "^8.1.2",
     "resolve-from": "^5.0.0"
