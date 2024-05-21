@@ -1,5 +1,6 @@
 {
   "name": "@rrrrrrrrrrr-org/shared-config",
+  "version": "0.0.0",
   "private": true,
   "workspaces": [
     "packages/*"

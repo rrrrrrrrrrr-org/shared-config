@@ -1,10 +1,11 @@
 const path = require("path");
-const execa = require("execa");
+// const execa = require("execa");
 const resolveFrom = require("resolve-from");
 
 const SEMVER_TYPES = ["patch", "minor", "major"];
 
 async function main() {
+  const { execa } = await import("execa");
   const args = process.argv;
   const releaseType = args[args.indexOf("--release-type") + 1];
   const semverType = args[args.indexOf("--semver-type") + 1];
